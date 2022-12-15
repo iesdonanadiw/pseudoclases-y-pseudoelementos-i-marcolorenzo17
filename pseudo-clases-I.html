@@ -35,6 +35,26 @@
       border: 2px solid red;
     }
 
+    input:disabled {
+      background: lightgrey;
+    }
+
+    a:link {
+      color: green;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    input:required {
+      background: lightcoral;
+    }
+
+    body:lang(en) {
+      background-color: skyblue;
+    }
+
   </style>
 </head>
 <body>
@@ -75,6 +95,13 @@
     <input type="email" value="EjemploNoValido">
 
     <input type="submit" value="Submit">
+
+    Deshabilitado:</label><input type="text" name="Deshabilitado" disabled><br>
+
+    <a href="https://www.google.es">Ir a Google</a>
+    <a href="https://www.youtube.es">Ir a YouTube</a>
+
+    Requerido:</label><input type="text" name="Deshabilitado" required><br>
   </form>
   
   <p class="highlight">Este párrafo debe resaltarse con fondo amarillo cuando se pasa el cursor sobre él.</p>

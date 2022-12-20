@@ -6,21 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pseudoelementos</title>
     <style>
-      p:first-line {
+      p::first-line {
         font-size: 1.5em;
       }
-      h1:first-letter {
+      h1::first-letter {
         font-size: 1.5em;
         color: red;
       }
-      h1:before {
+      h1::before {
         content: "Apartado - ";
       }
-      h1:after {
+      h1::after {
         content: " - ";
       }
-      h2:before {
-        content: url(icono.png);
+      h2::before {
+        content: '*';
+      }
+      p:hover {
+        background: yellow;
+        color: red;
+      }
+      .capital::first-letter{
+        color: red;
+        font-size: xx-large;
+      }
+      p:last-of-type::first-line{
+        font-weight: bold;
+      }
+      ol li::marker {
+        color: red;
+      }
+      input::placeholder {
+        color: orange;
       }
     </style>
   </head>
@@ -55,6 +72,12 @@
         <li>Viernes</li>
         <li>Sábado</li>
       </ol>
+
+      <form>
+        Nombre: <input type="text" name="nombre" value="" placeholder="Introduce tu nombre"><br>
+        Contraseña: <input type="password" name="contra" value="" placeholder="Introduce tu contraseña"><br>
+        Correo: <input type="email" name="mail" value="" placeholder="Introduce tu e-mail">
+      </form>
 
     </div>
   </body>
